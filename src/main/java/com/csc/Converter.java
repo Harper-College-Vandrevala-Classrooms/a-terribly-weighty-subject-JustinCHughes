@@ -23,4 +23,14 @@ public class Converter {
       return (Integer.toString(poundsAns) + " lbs " + Integer.toString(ouncesAns) + " oz");
     }
   }
+
+  public String toOunces(int pounds, int ounces) {
+    int ans = (pounds * 16) + ounces;
+    if(ans == 1) {
+      return "1 ounce";
+    }
+    else {
+      return Integer.toString(ans) + " ounces";
+    }
+  }
 }
